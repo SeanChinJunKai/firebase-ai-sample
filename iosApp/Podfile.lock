@@ -1,0 +1,70 @@
+PODS:
+  - FirebaseAI (11.14.0):
+    - FirebaseAppCheckInterop (~> 11.4)
+    - FirebaseAuthInterop (~> 11.4)
+    - FirebaseCore (~> 11.14.0)
+    - FirebaseCoreExtension (~> 11.14.0)
+  - FirebaseAIBridge (0.1.0):
+    - FirebaseAI
+    - FirebaseCore
+  - FirebaseAppCheckInterop (11.14.0)
+  - FirebaseAuthInterop (11.14.0)
+  - FirebaseCore (11.14.0):
+    - FirebaseCoreInternal (~> 11.14.0)
+    - GoogleUtilities/Environment (~> 8.1)
+    - GoogleUtilities/Logger (~> 8.1)
+  - FirebaseCoreExtension (11.14.0):
+    - FirebaseCore (~> 11.14.0)
+  - FirebaseCoreInternal (11.14.0):
+    - "GoogleUtilities/NSData+zlib (~> 8.1)"
+  - GoogleUtilities/Environment (8.1.0):
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Logger (8.1.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Privacy
+  - "GoogleUtilities/NSData+zlib (8.1.0)":
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Privacy (8.1.0)
+
+DEPENDENCIES:
+  - FirebaseAIBridge (from `https://github.com/SeanChinJunKai/FirebaseAIBridge`, tag `0.1.0`)
+  - FirebaseCore (from `https://github.com/firebase/firebase-ios-sdk.git`, tag `11.14.0`)
+
+SPEC REPOS:
+  trunk:
+    - FirebaseAI
+    - FirebaseAppCheckInterop
+    - FirebaseAuthInterop
+    - FirebaseCoreExtension
+    - FirebaseCoreInternal
+    - GoogleUtilities
+
+EXTERNAL SOURCES:
+  FirebaseAIBridge:
+    :git: https://github.com/SeanChinJunKai/FirebaseAIBridge
+    :tag: 0.1.0
+  FirebaseCore:
+    :git: https://github.com/firebase/firebase-ios-sdk.git
+    :tag: 11.14.0
+
+CHECKOUT OPTIONS:
+  FirebaseAIBridge:
+    :git: https://github.com/SeanChinJunKai/FirebaseAIBridge
+    :tag: 0.1.0
+  FirebaseCore:
+    :git: https://github.com/firebase/firebase-ios-sdk.git
+    :tag: 11.14.0
+
+SPEC CHECKSUMS:
+  FirebaseAI: bbad5e4965c16706844d1bb06e972d18203757fb
+  FirebaseAIBridge: 63241c072126e842d4b13b94d60af2048e8f948d
+  FirebaseAppCheckInterop: a92ba81d0ee3c4cddb1a2e52c668ea51dc63c3ae
+  FirebaseAuthInterop: e25b58ecb90f3285085fa2118861a3c9dfdc62ad
+  FirebaseCore: fdb9cbef105020536be9a95561dc30db6f16c92a
+  FirebaseCoreExtension: 6af88594f639c1abb127bc096da32cf2c0dd69ff
+  FirebaseCoreInternal: 6a3b668197644aa858fc4127578637c6767ba123
+  GoogleUtilities: 00c88b9a86066ef77f0da2fab05f65d7768ed8e1
+
+PODFILE CHECKSUM: 8923cb589635b00e3c9313e49e86a0194a8a0a15
+
+COCOAPODS: 1.16.2

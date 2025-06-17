@@ -27,7 +27,7 @@ PODS:
   - GoogleUtilities/Privacy (8.1.0)
 
 DEPENDENCIES:
-  - FirebaseAIBridge (from `https://github.com/SeanChinJunKai/FirebaseAIBridge`, tag `0.1.0`)
+  - FirebaseAIBridge (from `https://github.com/SeanChinJunKai/FirebaseAIBridge`, tag `0.2.0`)
   - FirebaseCore (from `https://github.com/firebase/firebase-ios-sdk.git`, tag `11.14.0`)
 
 SPEC REPOS:
@@ -42,7 +42,7 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   FirebaseAIBridge:
     :git: https://github.com/SeanChinJunKai/FirebaseAIBridge
-    :tag: 0.1.0
+    :tag: 0.2.0
   FirebaseCore:
     :git: https://github.com/firebase/firebase-ios-sdk.git
     :tag: 11.14.0
@@ -50,7 +50,7 @@ EXTERNAL SOURCES:
 CHECKOUT OPTIONS:
   FirebaseAIBridge:
     :git: https://github.com/SeanChinJunKai/FirebaseAIBridge
-    :tag: 0.1.0
+    :tag: 0.2.0
   FirebaseCore:
     :git: https://github.com/firebase/firebase-ios-sdk.git
     :tag: 11.14.0
@@ -65,6 +65,6 @@ SPEC CHECKSUMS:
   FirebaseCoreInternal: 6a3b668197644aa858fc4127578637c6767ba123
   GoogleUtilities: 00c88b9a86066ef77f0da2fab05f65d7768ed8e1
 
-PODFILE CHECKSUM: 8923cb589635b00e3c9313e49e86a0194a8a0a15
+PODFILE CHECKSUM: 04be9c57449fbcf59f6d1aacf7493a24ba1a917f
 
 COCOAPODS: 1.16.2

@@ -13,7 +13,7 @@ androidx-testExt = "1.2.1"
 composeMultiplatform = "1.8.1"
 junit = "4.13.2"
 kotlin = "2.1.21"
-firebase-ai-kmp = "0.1.0"
+firebase-ai-kmp = "0.2.0"
 googleServices = "4.4.2"
 kermit = "2.0.4"
 

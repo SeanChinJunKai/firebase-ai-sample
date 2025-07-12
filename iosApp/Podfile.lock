@@ -1,21 +1,21 @@
 PODS:
-  - FirebaseAI (11.14.0):
+  - FirebaseAI (11.15.0):
     - FirebaseAppCheckInterop (~> 11.4)
     - FirebaseAuthInterop (~> 11.4)
-    - FirebaseCore (~> 11.14.0)
-    - FirebaseCoreExtension (~> 11.14.0)
+    - FirebaseCore (~> 11.15.0)
+    - FirebaseCoreExtension (~> 11.15.0)
   - FirebaseAIBridge (0.1.0):
     - FirebaseAI
     - FirebaseCore
-  - FirebaseAppCheckInterop (11.14.0)
-  - FirebaseAuthInterop (11.14.0)
-  - FirebaseCore (11.14.0):
-    - FirebaseCoreInternal (~> 11.14.0)
+  - FirebaseAppCheckInterop (11.15.0)
+  - FirebaseAuthInterop (11.15.0)
+  - FirebaseCore (11.15.0):
+    - FirebaseCoreInternal (~> 11.15.0)
     - GoogleUtilities/Environment (~> 8.1)
     - GoogleUtilities/Logger (~> 8.1)
-  - FirebaseCoreExtension (11.14.0):
-    - FirebaseCore (~> 11.14.0)
-  - FirebaseCoreInternal (11.14.0):
+  - FirebaseCoreExtension (11.15.0):
+    - FirebaseCore (~> 11.15.0)
+  - FirebaseCoreInternal (11.15.0):
     - "GoogleUtilities/NSData+zlib (~> 8.1)"
   - GoogleUtilities/Environment (8.1.0):
     - GoogleUtilities/Privacy
@@ -27,8 +27,8 @@ PODS:
   - GoogleUtilities/Privacy (8.1.0)
 
 DEPENDENCIES:
-  - FirebaseAIBridge (from `https://github.com/SeanChinJunKai/FirebaseAIBridge`, tag `0.2.0`)
-  - FirebaseCore (from `https://github.com/firebase/firebase-ios-sdk.git`, tag `11.14.0`)
+  - FirebaseAIBridge (from `https://github.com/SeanChinJunKai/FirebaseAIBridge`, tag `0.3.0`)
+  - FirebaseCore (from `https://github.com/firebase/firebase-ios-sdk.git`, tag `11.15.0`)
 
 SPEC REPOS:
   trunk:
@@ -42,29 +42,29 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   FirebaseAIBridge:
     :git: https://github.com/SeanChinJunKai/FirebaseAIBridge
-    :tag: 0.2.0
+    :tag: 0.3.0
   FirebaseCore:
     :git: https://github.com/firebase/firebase-ios-sdk.git
-    :tag: 11.14.0
+    :tag: 11.15.0
 
 CHECKOUT OPTIONS:
   FirebaseAIBridge:
     :git: https://github.com/SeanChinJunKai/FirebaseAIBridge
-    :tag: 0.2.0
+    :tag: 0.3.0
   FirebaseCore:
     :git: https://github.com/firebase/firebase-ios-sdk.git
-    :tag: 11.14.0
+    :tag: 11.15.0
 
 SPEC CHECKSUMS:
-  FirebaseAI: bbad5e4965c16706844d1bb06e972d18203757fb
+  FirebaseAI: 6f87dc9825bf889653c2d01a43579b652cd46ddd
   FirebaseAIBridge: 63241c072126e842d4b13b94d60af2048e8f948d
-  FirebaseAppCheckInterop: a92ba81d0ee3c4cddb1a2e52c668ea51dc63c3ae
-  FirebaseAuthInterop: e25b58ecb90f3285085fa2118861a3c9dfdc62ad
-  FirebaseCore: fdb9cbef105020536be9a95561dc30db6f16c92a
-  FirebaseCoreExtension: 6af88594f639c1abb127bc096da32cf2c0dd69ff
-  FirebaseCoreInternal: 6a3b668197644aa858fc4127578637c6767ba123
+  FirebaseAppCheckInterop: 06fe5a3799278ae4667e6c432edd86b1030fa3df
+  FirebaseAuthInterop: 7087d7a4ee4bc4de019b2d0c240974ed5d89e2fd
+  FirebaseCore: 2b25aaa8e18eeaf9efaef0e5e4d302483ba6aad1
+  FirebaseCoreExtension: edbd30474b5ccf04e5f001470bdf6ea616af2435
+  FirebaseCoreInternal: 9afa45b1159304c963da48addb78275ef701c6b4
   GoogleUtilities: 00c88b9a86066ef77f0da2fab05f65d7768ed8e1
 
-PODFILE CHECKSUM: 04be9c57449fbcf59f6d1aacf7493a24ba1a917f
+PODFILE CHECKSUM: f2f102a45a957292fcc7f4e3ab729235d48bc5a1
 
 COCOAPODS: 1.16.2

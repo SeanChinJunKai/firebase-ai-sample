@@ -72,7 +72,7 @@ suspend fun generateContent(prompt: String) : String {
         messageString = "Starting generation of content for prompt: $prompt",
         tag = "firebase-ai"
     )
-    val model = Firebase.ai(GenerativeBackend.GOOGLE_AI).generativeModel("gemini-2.0-flash")
+    val model = Firebase.ai(GenerativeBackend.googleAI()).generativeModel("gemini-2.0-flash")
     val response = model.generateContent(prompt)
     return response.text ?: "No content generated"
 }

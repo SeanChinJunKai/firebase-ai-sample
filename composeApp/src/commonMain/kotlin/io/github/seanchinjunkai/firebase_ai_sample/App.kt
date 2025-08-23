@@ -20,6 +20,8 @@ import androidx.compose.ui.unit.dp
 import co.touchlab.kermit.Logger
 import io.github.seanchinjunkai.firebase.ai.Firebase
 import io.github.seanchinjunkai.firebase.ai.GenerativeBackend
+import io.github.seanchinjunkai.firebase.ai.type.Schema
+import io.github.seanchinjunkai.firebase.ai.type.generationConfig
 import org.jetbrains.compose.ui.tooling.preview.Preview
 import kotlinx.coroutines.launch
 
@@ -27,7 +29,8 @@ import kotlinx.coroutines.launch
 @Preview
 fun App() {
     val coroutineScope = rememberCoroutineScope()
-    var prompt by remember { mutableStateOf("Summarize the benefits of Kotlin Multiplatform") }
+
+    var prompt by remember { mutableStateOf("For use in a children's card game, generate 10 animal-based characters.") }
     var content by remember { mutableStateOf("") }
     var showProgress by remember { mutableStateOf(false) }
 
@@ -43,7 +46,7 @@ fun App() {
                 TextButton(onClick = {
                     if (prompt.isNotBlank()) {
                         coroutineScope.launch {
-                            content = generateContent(prompt)
+                            content = generateStructuredOutput(prompt)
                             showProgress = true
                             showProgress = false
                         }
@@ -73,6 +76,35 @@ suspend fun generateContent(prompt: String) : String {
         tag = "firebase-ai"
     )
     val model = Firebase.ai(GenerativeBackend.googleAI()).generativeModel("gemini-2.0-flash")
+    val response = model.generateContent(prompt)
+    return response.text ?: "No content generated"
+}
+
+suspend fun generateStructuredOutput(prompt: String): String {
+    Logger.i(
+        messageString = "Starting generation of structured output for prompt: $prompt",
+        tag = "firebase-ai"
+    )
+    val jsonSchema = Schema.obj(
+        mapOf("characters" to Schema.array(
+            Schema.obj(
+                mapOf(
+                    "name" to Schema.string(),
+                    "age" to Schema.integer(),
+                    "species" to Schema.string(),
+                    "accessory" to Schema.enumeration(listOf("hat", "belt", "shoes")),
+                ),
+                optionalProperties = listOf("accessory")
+            )
+        ))
+    )
+
+    val model = Firebase.ai(backend = GenerativeBackend.googleAI()).generativeModel(
+        modelName = "gemini-2.5-flash",
+        generationConfig = generationConfig {
+            responseMimeType = "application/json"
+            responseSchema = jsonSchema
+        })
     val response = model.generateContent(prompt)
     return response.text ?: "No content generated"
 }

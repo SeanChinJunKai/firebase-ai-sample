@@ -4,5 +4,5 @@ target 'iosApp' do
     platform :ios, deployment_target
     # Pods for iosApp
     pod 'FirebaseCore', :git => 'https://github.com/firebase/firebase-ios-sdk.git', :tag => '11.15.0'
-    pod 'FirebaseAIBridge', :git => 'https://github.com/SeanChinJunKai/FirebaseAIBridge', :tag => '0.3.0'
+    pod 'FirebaseAIBridge', :git => 'https://github.com/SeanChinJunKai/FirebaseAIBridge', :tag => '0.4.0'
 end
